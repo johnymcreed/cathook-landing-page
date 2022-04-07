@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nullworks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <style>
+    body {
+      display: grid;
+      height: 100vh;
+      margin: 0;
+      place-items: center center;
+      background-color: #1b1e22;
+      font-family: sans-serif;
+      color: black;
+      ;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    a:visited,
+    a,
+    .link {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover,
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+    p {
+      color: #d9d9d9;
+      text-align: left;
+    }
+
+    i:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    details>summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    details>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details {
+      max-width: 400px;
+    }
+
+    details[open] summary~* {
+      animation: sweep .5s ease-in-out;
+    }
+
+    .telegram-icon {
+      content: url('./telegram.svg');
+      vertical-align: -0.25em;
+      height: 1.1em;
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+    }
+
+    .git-icon {
+      content: url('./git.svg');
+      vertical-align: -0.25em;
+      height: 1.1em;
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+    }
+
+    .discord-icon {
+      content: url('./discord.svg');
+      vertical-align: -0.25em;
+      height: 1.1em;
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+    }
+
+    .about-icon {
+      content: url('./about.svg');
+      vertical-align: -0.25em;
+      height: 1.1em;
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+      filter: invert(0.65);
+    }
+
+    @keyframes sweep {
+      0% {
+        opacity: 0;
+        margin-left: -10px
+      }
+
+      100% {
+        opacity: 1;
+        margin-left: 0px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src=cat.png id=logo>
+    <br><br>
+    <details>
+      <summary>
+        <a href="https://cathook.club/s/ch/git">[ Cathook ]</a>
+        <a href="https://t.me/nullworks"><i class="telegram-icon"></i></a>
+        <i class="about-icon"></i>
+      </summary>
+      <p>Cathook is our TF2 training software (cheat) that runs exclusively on GNU/Linux systems. It has a wide range of
+        features from basic to advanced, including features that allow for complete automation.
+        <a href="https://cathook.club/wiki/Feature-List-and-explanations">Full list of features.</a></p>
+    </details>
+    <details style="padding-top: 0.15rem;">
+      <summary>
+        <a href="https://accgen.cathook.club">[ Steam Account Generator ]</a>
+        <a href="https://accgen.cathook.club/gitlab"><i class="git-icon"></i></a>
+        <a href="https://t.me/sag_bot_chat"><i class="telegram-icon"></i></a>
+        <i class="about-icon"></i>
+      </summary>
+      <p>The Steam Account Generator does exactly what the name says. It allows you to generate steam accounts with just
+        a few clicks and allows for full automation using services like 2captcha.<br>
+        <a href="https://accgen.cathook.club/gitlab/wikis">Wiki</a>,
+        <a href="https://status.cathook.club">Status page</a>,
+        <a href="https://accgen.cathook.club/grafana">Grafana</a>.
+      </p>
+    </details>
+    <br>
+    <details>
+      <summary>
+        <span class="link">[ About Nullworks ]</span>
+        <a href="https://cathook.club/discord"><i class="discord-icon"></i></a>
+      </summary>
+      <p>We are a vibrant community of open source/free software developers and users working on and contributing to
+        various projects in our free time. Our main projects are Cathook and the Steam Account Generator. The community
+        is active on telegram and matrix.</p>
+    </details>
+</body>
+
+</html>
